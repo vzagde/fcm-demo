@@ -28,7 +28,7 @@ var app = {
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
 
-        const push = PushNotification.init({
+        var push = new PushNotification.init({
             android: {
                 senderID: "836033005549",
             },
